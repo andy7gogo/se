@@ -12,8 +12,8 @@ public class one2 {
 		String fs = "break.txt";
 	    FileWriter fw = new FileWriter(fs);
 	    BufferedWriter bfw = new BufferedWriter(fw);
-	    String a[] = new String[150];
-	    String n = "key.txt";
+	    String a[] = new String[200];
+	    String n = "answerkey.txt";
 	    read(a,n);
 	    
 	    for(int i=0;i<a.length;i++) {
@@ -23,7 +23,7 @@ public class one2 {
 	    }
 	    
 	    ArrayList<Integer> a1 = new ArrayList<Integer>();
-	    read2(a1,"challenge.txt");
+	    read2(a1,"cipher4.txt"); //challenge.txt
 	    for(int i=0;i<a1.size();i++) {
 	    	if(a[i]!=null) {
 	    		int c = a1.get(i) ^ Integer.parseInt(a[i], 16);
