@@ -1,0 +1,10 @@
+使用java撰寫，可用各種編譯器執行、或是使用cmd執行，我是安裝eclipse java來跑執行，
+程式裡面都已經加上註解
+
+1.one.java為找尋金鑰的程式，會將cipher1~10讀取，並且一個一個，對其他cipher進行XOR，將所有XOR後的結果儲存，計算每個byte位置上出現英文字母的次數，將英文字次數高的與" "空白做XOR後的結果存到該位置上，極有可能為該byte的加密金鑰，並將全部收集到的金鑰寫入key.txt中
+
+2.one2.java為用金鑰解密文的程式，讀取key.txt的金鑰後，再與密文challenge.txt、或者cipher1~10進行解密，可先解出部分的明文，再依明文去進行猜測，解出完整的金鑰answerkey.txt，破譯的明文寫入answer.txt中
+
+3.test2.java為逆向解金鑰的程式，猜測challenge的明文可能是no matter how perfect........後，將此明文存在plaintex.txt中，用plaintext與challenge逆向解出完整的金鑰並存入answerkey.txt中，再用此金鑰執行one2.java，與其他的cipher1~10作解密，可發現此金鑰為正確的。
+
+4.plaintext.txt存放明文，answerkey.txt為完整金鑰，key.txt為部分可能金鑰，answer.txt為解密的明文

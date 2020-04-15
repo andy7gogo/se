@@ -1,0 +1,10 @@
+使用java撰寫，可用各種編譯器執行、或是使用cmd執行，我是安裝eclipse java來跑執行，
+程式裡面都已經加上註解
+
+1.fre.java為主程式，執行後會讀取frequency_.....txt，將字母、詞彙計算寫入temp.txt中，而破譯的銘文寫入break.txt
+
+2.frequency_attack_cipher_example.txt為密文，fre會讀取此檔案
+
+3.temp.txt為fre讀取密文後輸出的字母、詞彙次數計算檔
+
+4.break.txt為fre破譯後的明文

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class test2 {
 	public static void main(String args[]) throws IOException{
 		ArrayList<String> a = new ArrayList<String>();
-		read(a,"key.txt");
+		read(a,"pkey.txt");
 		
 		ArrayList<String> a1 = new ArrayList<String>();
 		read2(a1,"challenge.txt");
