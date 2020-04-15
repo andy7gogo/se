@@ -7,8 +7,8 @@ s = "20"
 i = int(s,16)
 
 
-space = "5c"
-A = "10"
+space = "8a"
+A = "02"
 w = int(space,16)^int(A,16)
 # print(w)
 W = hex(w)
