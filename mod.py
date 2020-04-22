@@ -18,22 +18,22 @@ def computeGCD(x, y):
    return x 
 
 
-a = 7465
-b = 2464
-# print (computeGCD(a,b)) 
-print(a%b)
+a = 24
+b = 22
+print (computeGCD(a,b)) 
+# print(a%b)
 
-def ext_eculid(a, b):
-    print('a = {0}, b = {1}'.format(a, b))
-    if b == 0:
-        print('Finally, {0} {1} {2}'.format(1, 0, a))
-        return 1, 0, a
-    else:
-        x, y, q = ext_eculid(b, a % b) # q = gcd(a, b) = gcd(b, a%b)
-        x, y = y, (x - (a//b)*y)
-        print('{0} {1} {2}'.format(x, y, q))
-        return x, y, q
+# def ext_eculid(a, b):
+#     print('a = {0}, b = {1}'.format(a, b))
+#     if b == 0:
+#         print('Finally, {0} {1} {2}'.format(1, 0, a))
+#         return 1, 0, a
+#     else:
+#         x, y, q = ext_eculid(b, a % b) # q = gcd(a, b) = gcd(b, a%b)
+#         x, y = y, (x - (a//b)*y)
+#         print('{0} {1} {2}'.format(x, y, q))
+#         return x, y, q
 
-a=13
-b=61
+# a=361
+# b=166
 # print(ext_eculid(a, b))
