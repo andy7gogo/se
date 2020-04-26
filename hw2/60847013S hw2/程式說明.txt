@@ -1,0 +1,7 @@
+python檔attack.py為padding oracle attack的程式檔
+
+程式內容都有註解
+
+用cmd python執行即可
+
+會執行不少時間來解破解密文
